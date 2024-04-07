@@ -8,4 +8,8 @@ Disconnect your internet (this is a safety/security precaution)
 
 Follow the instructions on-screen!
 
+This application creates a printable paper wallet, containing a public key, and a private key, as well as QR Codes.
+
+DO NOT SHARE YOUR KEYS OR QR CODES WITH ANYONE!
+
 DO NOT LOSE YOUR PRIVATE KEY, AS YOUR FUNDS WILL NOT BE RETRIEVABLE WITHOUT IT! 
