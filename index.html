@@ -9966,8 +9966,22 @@ Bitcoin.Util = {
 	<div id="main">
     	<div id="logoback">
  
-			<div id="tagline">Open Source JavaScript VERGE paper wallet generator</div>
-			<div id="tagsite">For help, or community support, visit <a href="https://kiwiirc.com/client/irc.freenode.net/verge">our online chat room</a></div>
+			<div id="tagline">Verge Paper Wallet Generator &amp; Validator</div>
+			<div id="tagsite">
+				<span>Community:</span>
+				<a href="https://discord.gg/vergecurrency" target="_blank" rel="noopener noreferrer" class="sociallink" aria-label="Join Verge on Discord">
+					<svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+						<path d="M20.32 4.37a19.8 19.8 0 0 0-4.92-1.53.07.07 0 0 0-.07.03c-.21.38-.44.88-.6 1.27a18.3 18.3 0 0 0-5.46 0 12.6 12.6 0 0 0-.61-1.27.08.08 0 0 0-.07-.03 19.74 19.74 0 0 0-4.92 1.53.07.07 0 0 0-.03.03C.53 9.01-.32 13.52.1 17.97a.08.08 0 0 0 .03.05 19.9 19.9 0 0 0 6.03 3.05.08.08 0 0 0 .09-.03c.47-.64.89-1.31 1.25-2.02a.08.08 0 0 0-.04-.11 13 13 0 0 1-1.9-.91.08.08 0 0 1-.01-.13c.13-.1.26-.2.38-.31a.08.08 0 0 1 .08-.01c4 1.82 8.33 1.82 12.29 0a.08.08 0 0 1 .08.01c.12.11.25.21.38.31a.08.08 0 0 1-.01.13c-.61.36-1.24.66-1.9.91a.08.08 0 0 0-.04.11c.37.71.79 1.38 1.25 2.02a.08.08 0 0 0 .09.03 19.84 19.84 0 0 0 6.03-3.05.08.08 0 0 0 .03-.05c.5-5.14-.84-9.61-3.55-13.6a.06.06 0 0 0-.03-.03ZM8.02 15.24c-1.2 0-2.19-1.1-2.19-2.45s.97-2.45 2.19-2.45c1.22 0 2.2 1.11 2.19 2.45 0 1.35-.98 2.45-2.19 2.45Zm7.96 0c-1.2 0-2.19-1.1-2.19-2.45s.97-2.45 2.19-2.45c1.22 0 2.2 1.11 2.19 2.45 0 1.35-.97 2.45-2.19 2.45Z"></path>
+					</svg>
+					<span>Discord</span>
+				</a>
+				<a href="https://t.me/officialxvg" target="_blank" rel="noopener noreferrer" class="sociallink" aria-label="Join Verge on Telegram">
+					<svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+						<path d="M9.04 15.47 8.66 20.8c.54 0 .78-.23 1.07-.51l2.57-2.45 5.33 3.9c.98.54 1.67.26 1.93-.9l3.5-16.4h.01c.31-1.45-.52-2.02-1.47-1.67L1.03 10.7c-1.4.55-1.38 1.33-.24 1.68l5.26 1.64L18.27 6.4c.58-.39 1.1-.17.66.22"></path>
+					</svg>
+					<span>Telegram</span>
+				</a>
+			</div>
             <div id="tagwarning"></div>
 			<div id="seedpoolarea"><textarea rows="16" cols="62" id="seedpool"></textarea></div>
         
@@ -10061,10 +10075,7 @@ Bitcoin.Util = {
 						  }
 						</script>
                         </li>
-                        <li><strong>?</strong> Are you using a secure operating system installation guaranteed to be free of spyware and viruses, for example, the <a href="#" onClick="window.open('https://bitcoinpaperwallet.com/ubuntu-linux-live-bootable-cd/', '_blank'); return false;">Ubuntu LiveCD?</a></li>
                         </ul>
-                        
-                        <p><a href="https://bitcoinpaperwallet.com/#security" target="_blank">More security tips and answers to frequently asked questions &raquo;</a></p>
                         
                         </div>
 						<span id="instructions2">
@@ -10439,26 +10450,40 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
 
 		<div id="footer" class="footer">
 			<div class="authorbtc">
-				<div>
-					<span class="item" id="footerlabeldonations"><b>Donations keep this server free!</b></span>
-                    <span class="item" style="font-size: 11px; font-family: 'Courier New', Courier, monospace;">
-                    <strong>Verge</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DHe3mTNQztY1wWokdtMprdeCKNoMxyThoV<br></span>
-                    
-                    <span class="item" style="font-size: 11px;">Contributions are put toward costs of hosting and development.</span>
-
-
+				<div class="donationcard">
+					<div class="donationcard-qrwrap">
+						<div class="donationcard-qr"><img src="images/donation-qr.svg" alt="Donation QR code" class="donationcard-qrimg"></div>
+						<div class="donationcard-caption">Donations welcome</div>
+					</div>
+					<div class="donationcard-copy">
+						<span class="item donationcard-title"><b>Donations keep this server free!</b></span>
+						<span class="item donationcard-subtitle">Contributions are put toward costs of hosting and development.</span>
+						<span class="item donationcard-addresslabel"><strong>Verge</strong></span>
+						<div class="item donationcard-addressrow">
+							<button type="button" class="donationcard-addressbutton" id="donationAddressCopy" data-copy-text="DHe3mTNQztY1wWokdtMprdeCKNoMxyThoV" title="Copy donation address">
+								<span class="donationcard-address">DHe3mTNQztY1wWokdtMprdeCKNoMxyThoV</span>
+								<span class="donationcard-copyicon" aria-hidden="true">
+									<svg viewBox="0 0 24 24" focusable="false">
+										<path d="M9 9h10v12H9z"></path>
+										<path d="M5 3h10v3H8v9H5z"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="authorpgp">
+				<div class="securitycard">
+	            	<span class="item securitycard-title"><b>Security &amp; signatures</b></span>
+	                <span class="item securitycard-copy" style="font-size: 90%;">For secure wallet generation</a>, do not print wallets "live" from VERGEcurrency.com.<br />Instead of printing from this live website, you can download this app's .zip file from the link below, extract the contents, and open the index.html in your browser, while disconnected from the internet. If you have already done that, you can ignore this message.</span>
+					<span class="item"><a href="https://github.com/vergecurrency/verge-paperwallet/releases/latest" target="_blank" id="footerlabelgithub"><strong>Secure .ZIP Download</strong></a></span>
 
-            	<span class="item"><b>Security &amp; signatures</b></span>
-                <span class="item" style="font-size: 90%;">For secure wallet generation</a>, do not print wallets "live" from VERGEcurrency.com.<br />Instead, download this generator and run the HTML as a "local" file:</span>
-				<span class="item"><a href="https://github.com/vergecurrency/vergecurrency.com/blob/master/paper-wallet/xvg-paperwallet.zip" target="_blank" id="footerlabelgithub"><strong>Secure Download</strong> (.RAR file)</a></span>
-
-                <span class="item" id="footerlabeltests" style="font-size: 90%;">Run unit test: <a href="?unittests=1#tests">basic</a></span>
-                
+	                <span class="item securitycard-copy" id="footerlabeltests" style="font-size: 90%;">Run unit test: <a href="?unittests=1#tests">basic</a></span>
+				</div>
 			</div>
 		</div>
+		<div id="copytoast" class="copytoast" role="status" aria-live="polite">Address copied</div>
 	</div>
 
 <script type="text/javascript">
@@ -11848,7 +11873,7 @@ ninja.publicKey = {
 			testGetBitcoinAddressFromByteArray: function () {
 				var bytes = [4, 120, 152, 47, 64, 250, 12, 11, 122, 85, 113, 117, 131, 175, 201, 154, 78, 223, 211, 1, 162, 114, 157, 197, 155, 11, 142, 185, 225, 134, 146, 188, 181, 33, 240, 84, 250, 217, 130, 175, 76, 193, 147, 58, 253, 31, 27, 86, 62, 167, 121, 166, 170, 108, 206, 54, 163, 11, 148, 125, 214, 83, 230, 62, 68];
 				var address = ninja.publicKey.getBitcoinAddressFromByteArray(bytes);
-				if (address != "1Cnz9ULjzBPYhDw1J8bpczDWCEXnC9HuU1") {
+				if (address != "DGw5gjHPHbHqEE7c2ibPAkP75NG5Uur8A7") {
 					return false;
 				}
 				return true;
@@ -11919,7 +11944,7 @@ ninja.publicKey = {
 			},
 			testGetByteArrayFromMultiplyingCompressedOutputsCompressed: function () {
 				var key1 = "0278982F40FA0C0B7A55717583AFC99A4EDFD301A2729DC59B0B8EB9E18692BCB5";
-				var key2 = "L1n4cgNZAo2KwdUc15zzstvo1dcxpBw26NkrLqfDZtU9AEbPkLWu";
+				var key2 = "QTAymXBYRQWTB9sebMqnm7mQUfeXrk4pydSm8U44JF5VcAXNSFhZ";
 				var ecKey = new Bitcoin.ECKey(key2);
 				var bytes = ninja.publicKey.getByteArrayFromMultiplying(key1, ecKey);
 				if (bytes.toString() != "2,102,230,163,180,107,9,21,17,48,35,245,227,110,199,119,144,57,41,112,64,245,182,40,224,41,230,41,5,26,206,138,57") {
@@ -11929,7 +11954,7 @@ ninja.publicKey = {
 			},
 			testGetByteArrayFromMultiplyingShouldReturnNullWhenSameKey1: function () {
 				var key1 = "0478982F40FA0C0B7A55717583AFC99A4EDFD301A2729DC59B0B8EB9E18692BCB521F054FAD982AF4CC1933AFD1F1B563EA779A6AA6CCE36A30B947DD653E63E44";
-				var key2 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key2 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var bytes = ninja.publicKey.getByteArrayFromMultiplying(key1, new Bitcoin.ECKey(key2));
 				if (bytes != null) {
 					return false;
@@ -11938,7 +11963,7 @@ ninja.publicKey = {
 			},
 			testGetByteArrayFromMultiplyingShouldReturnNullWhenSameKey2: function () {
 				var key1 = "0278982F40FA0C0B7A55717583AFC99A4EDFD301A2729DC59B0B8EB9E18692BCB5";
-				var key2 = "KxbhchnQquYQ2dfSxz7rrEaQTCukF4uCV57TkamyTbLzjFWcdi3S";
+				var key2 = "QPzcmYbQ6X2XGA4VZFxejTR1vEwKHd31NKoNYDApBwxMBBWwuNeV";
 				var bytes = ninja.publicKey.getByteArrayFromMultiplying(key1, new Bitcoin.ECKey(key2));
 				if (bytes != null) {
 					return false;
@@ -11993,7 +12018,7 @@ ninja.publicKey = {
 				return true;
 			},
 			testGetBitcoinPrivateKeyByteArray: function () {
-				var key = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var bytes = [41, 38, 101, 195, 135, 36, 24, 173, 241, 218, 127, 250, 58, 100, 111, 47, 6, 2, 36, 109, 166, 9, 138, 145, 210, 41, 195, 33, 80, 242, 113, 139];
 				var btcKey = new Bitcoin.ECKey(key);
 				if (btcKey.getBitcoinPrivateKeyByteArray().toString() != bytes.toString()) {
@@ -12002,7 +12027,7 @@ ninja.publicKey = {
 				return true;
 			},
 			testECKeyDecodeWalletImportFormat: function () {
-				var key = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var bytes1 = [41, 38, 101, 195, 135, 36, 24, 173, 241, 218, 127, 250, 58, 100, 111, 47, 6, 2, 36, 109, 166, 9, 138, 145, 210, 41, 195, 33, 80, 242, 113, 139];
 				var bytes2 = Bitcoin.ECKey.decodeWalletImportFormat(key);
 				if (bytes1.toString() != bytes2.toString()) {
@@ -12011,7 +12036,7 @@ ninja.publicKey = {
 				return true;
 			},
 			testECKeyDecodeCompressedWalletImportFormat: function () {
-				var key = "KxbhchnQquYQ2dfSxz7rrEaQTCukF4uCV57TkamyTbLzjFWcdi3S";
+				var key = "QPzcmYbQ6X2XGA4VZFxejTR1vEwKHd31NKoNYDApBwxMBBWwuNeV";
 				var bytes1 = [41, 38, 101, 195, 135, 36, 24, 173, 241, 218, 127, 250, 58, 100, 111, 47, 6, 2, 36, 109, 166, 9, 138, 145, 210, 41, 195, 33, 80, 242, 113, 139];
 				var bytes2 = Bitcoin.ECKey.decodeCompressedWalletImportFormat(key);
 				if (bytes1.toString() != bytes2.toString()) {
@@ -12020,7 +12045,7 @@ ninja.publicKey = {
 				return true;
 			},
 			testWifToPubKeyHex: function () {
-				var key = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var btcKey = new Bitcoin.ECKey(key);
 				if (btcKey.getPubKeyHex() != "0478982F40FA0C0B7A55717583AFC99A4EDFD301A2729DC59B0B8EB9E18692BCB521F054FAD982AF4CC1933AFD1F1B563EA779A6AA6CCE36A30B947DD653E63E44"
 					|| btcKey.getPubPoint().compressed != false) {
@@ -12029,7 +12054,7 @@ ninja.publicKey = {
 			return true;
 		},
 		testWifToPubKeyHexCompressed: function () {
-			var key = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+			var key = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 			var btcKey = new Bitcoin.ECKey(key);
 			btcKey.setCompressed(true);
 			if (btcKey.getPubKeyHex() != "0278982F40FA0C0B7A55717583AFC99A4EDFD301A2729DC59B0B8EB9E18692BCB5"
@@ -12055,18 +12080,18 @@ ninja.publicKey = {
 			return true;
 		},
 		testCompressedWifToECKey: function () {
-			var key = "KxbhchnQquYQ2dfSxz7rrEaQTCukF4uCV57TkamyTbLzjFWcdi3S";
+			var key = "QPzcmYbQ6X2XGA4VZFxejTR1vEwKHd31NKoNYDApBwxMBBWwuNeV";
 			var btcKey = new Bitcoin.ECKey(key);
-			if (btcKey.getBitcoinWalletImportFormat() != "KxbhchnQquYQ2dfSxz7rrEaQTCukF4uCV57TkamyTbLzjFWcdi3S"
+			if (btcKey.getBitcoinWalletImportFormat() != "QPzcmYbQ6X2XGA4VZFxejTR1vEwKHd31NKoNYDApBwxMBBWwuNeV"
 					|| btcKey.getPubPoint().compressed != true) {
 					return false;
 				}
 				return true;
 			},
 			testWifToECKey: function () {
-				var key = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var btcKey = new Bitcoin.ECKey(key);
-				if (btcKey.getBitcoinWalletImportFormat() != "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb") {
+				if (btcKey.getBitcoinWalletImportFormat() != "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX") {
 					return false;
 				}
 				return true;
@@ -12075,7 +12100,7 @@ ninja.publicKey = {
 				var key = "bitaddress.org unit test";
 				var bytes = Crypto.SHA256(key, { asBytes: true });
 				var btcKey = new Bitcoin.ECKey(bytes);
-				if (btcKey.getBitcoinWalletImportFormat() != "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb") {
+				if (btcKey.getBitcoinWalletImportFormat() != "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX") {
 					return false;
 				}
 				return true;
@@ -12083,41 +12108,41 @@ ninja.publicKey = {
 			testMini30CharsToECKey: function () {
 				var key = "SQE6yipP5oW8RBaStWoB47xsRQ8pat";
 				var btcKey = new Bitcoin.ECKey(key);
-				if (btcKey.getBitcoinWalletImportFormat() != "5JrBLQseeZdYw4jWEAHmNxGMr5fxh9NJU3fUwnv4khfKcg2rJVh") {
+				if (btcKey.getBitcoinWalletImportFormat() != "6KAWdNLcDKvLygAfRYujzaFbKW9WCGea5DniGHYxaMrxRHTKndQ") {
 					return false;
 				}
 				return true;
 			},
 			testGetECKeyFromAdding: function () {
-				var key1 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key1 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var key2 = "SQE6yipP5oW8RBaStWoB47xsRQ8pat";
 				var ecKey = ninja.privateKey.getECKeyFromAdding(key1, key2);
-				if (ecKey.getBitcoinWalletImportFormat() != "5KAJTSqSjpsZ11KyEE3qu5PrJVjR4ZCbNxK3Nb1F637oe41m1c2") {
+				if (ecKey.getBitcoinWalletImportFormat() != "6KUdkQJQJbAM3cm8RcfpWhP5mvCxZgUrz8SGh5e8uhKSSik9yhP") {
 					return false;
 				}
 				return true;
 			},
 			testGetECKeyFromAddingCompressed: function () {
-				var key1 = "KxbhchnQquYQ2dfSxz7rrEaQTCukF4uCV57TkamyTbLzjFWcdi3S";
-				var key2 = "L1n4cgNZAo2KwdUc15zzstvo1dcxpBw26NkrLqfDZtU9AEbPkLWu";
+				var key1 = "QPzcmYbQ6X2XGA4VZFxejTR1vEwKHd31NKoNYDApBwxMBBWwuNeV";
+				var key2 = "QTAymXBYRQWTB9sebMqnm7mQUfeXrk4pydSm8U44JF5VcAXNSFhZ";
 				var ecKey = ninja.privateKey.getECKeyFromAdding(key1, key2);
-				if (ecKey.getBitcoinWalletImportFormat() != "L3A43j2pc2J8F2SjBNbYprPrcDpDCh8Aju8dUH65BEM2r7RFSLv4") {
+				if (ecKey.getBitcoinWalletImportFormat() != "QUYyCZqordnFUYqmmeSLi5EU5FqnFFFyd9pYFuUuuaxPJ3SNWz8g") {
 					return false;
 				}
 				return true;
 			},
 			testGetECKeyFromAddingUncompressedAndCompressed: function () {
-				var key1 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
-				var key2 = "L1n4cgNZAo2KwdUc15zzstvo1dcxpBw26NkrLqfDZtU9AEbPkLWu";
+				var key1 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
+				var key2 = "QTAymXBYRQWTB9sebMqnm7mQUfeXrk4pydSm8U44JF5VcAXNSFhZ";
 				var ecKey = ninja.privateKey.getECKeyFromAdding(key1, key2);
-				if (ecKey.getBitcoinWalletImportFormat() != "5KAJTSqSjpsZ11KyEE3qu5PrJVjR4ZCbNxK3Nb1F637oe41m1c2") {
+				if (ecKey.getBitcoinWalletImportFormat() != "6KUdkQJQJbAM3cm8RcfpWhP5mvCxZgUrz8SGh5e8uhKSSik9yhP") {
 					return false;
 				}
 				return true;
 			},
 			testGetECKeyFromAddingShouldReturnNullWhenSameKey1: function () {
-				var key1 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
-				var key2 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key1 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
+				var key2 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var ecKey = ninja.privateKey.getECKeyFromAdding(key1, key2);
 				if (ecKey != null) {
 					return false;
@@ -12125,8 +12150,8 @@ ninja.publicKey = {
 				return true;
 			},
 			testGetECKeyFromAddingShouldReturnNullWhenSameKey2: function () {
-				var key1 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
-				var key2 = "KxbhchnQquYQ2dfSxz7rrEaQTCukF4uCV57TkamyTbLzjFWcdi3S";
+				var key1 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
+				var key2 = "QPzcmYbQ6X2XGA4VZFxejTR1vEwKHd31NKoNYDApBwxMBBWwuNeV";
 				var ecKey = ninja.privateKey.getECKeyFromAdding(key1, key2);
 				if (ecKey != null) {
 					return false;
@@ -12134,35 +12159,35 @@ ninja.publicKey = {
 				return true;
 			},
 			testGetECKeyFromMultiplying: function () {
-				var key1 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key1 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var key2 = "SQE6yipP5oW8RBaStWoB47xsRQ8pat";
 				var ecKey = ninja.privateKey.getECKeyFromMultiplying(key1, key2);
-				if (ecKey.getBitcoinWalletImportFormat() != "5KetpZ5mCGagCeJnMmvo18n4iVrtPSqrpnW5RP92Gv2BQy7GPCk") {
+				if (ecKey.getBitcoinWalletImportFormat() != "6KyE7WYim2sUFFjwZAYmckmJBvLRta88RxdJjsmv6aDpDfwfu4Z") {
 					return false;
 				}
 				return true;
 			},
 			testGetECKeyFromMultiplyingCompressed: function () {
-				var key1 = "KxbhchnQquYQ2dfSxz7rrEaQTCukF4uCV57TkamyTbLzjFWcdi3S";
-				var key2 = "L1n4cgNZAo2KwdUc15zzstvo1dcxpBw26NkrLqfDZtU9AEbPkLWu";
+				var key1 = "QPzcmYbQ6X2XGA4VZFxejTR1vEwKHd31NKoNYDApBwxMBBWwuNeV";
+				var key2 = "QTAymXBYRQWTB9sebMqnm7mQUfeXrk4pydSm8U44JF5VcAXNSFhZ";
 				var ecKey = ninja.privateKey.getECKeyFromMultiplying(key1, key2);
-				if (ecKey.getBitcoinWalletImportFormat() != "L5LFitc24jme2PfVChJS3bKuQAPBp54euuqLWciQdF2CxnaU3M8t") {
+				if (ecKey.getBitcoinWalletImportFormat() != "QWjAsjR1KMFmFv4Xny9DvpAWsCQkrdCToAXFJF7FMbdZQiaUaDXx") {
 					return false;
 				}
 				return true;
 			},
 			testGetECKeyFromMultiplyingUncompressedAndCompressed: function () {
-				var key1 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
-				var key2 = "L1n4cgNZAo2KwdUc15zzstvo1dcxpBw26NkrLqfDZtU9AEbPkLWu";
+				var key1 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
+				var key2 = "QTAymXBYRQWTB9sebMqnm7mQUfeXrk4pydSm8U44JF5VcAXNSFhZ";
 				var ecKey = ninja.privateKey.getECKeyFromMultiplying(key1, key2);
-				if (ecKey.getBitcoinWalletImportFormat() != "5KetpZ5mCGagCeJnMmvo18n4iVrtPSqrpnW5RP92Gv2BQy7GPCk") {
+				if (ecKey.getBitcoinWalletImportFormat() != "6KyE7WYim2sUFFjwZAYmckmJBvLRta88RxdJjsmv6aDpDfwfu4Z") {
 					return false;
 				}
 				return true;
 			},
 			testGetECKeyFromMultiplyingShouldReturnNullWhenSameKey1: function () {
-				var key1 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
-				var key2 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
+				var key1 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
+				var key2 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
 				var ecKey = ninja.privateKey.getECKeyFromMultiplying(key1, key2);
 				if (ecKey != null) {
 					return false;
@@ -12170,8 +12195,8 @@ ninja.publicKey = {
 				return true;
 			},
 			testGetECKeyFromMultiplyingShouldReturnNullWhenSameKey2: function () {
-				var key1 = "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb";
-				var key2 = "KxbhchnQquYQ2dfSxz7rrEaQTCukF4uCV57TkamyTbLzjFWcdi3S";
+				var key1 = "6JSjzfsqjV6nNZQuEepxDnrr9SMv5fyeEtqZyTmpPsWkzhN93tX";
+				var key2 = "QPzcmYbQ6X2XGA4VZFxejTR1vEwKHd31NKoNYDApBwxMBBWwuNeV";
 				var ecKey = ninja.privateKey.getECKeyFromMultiplying(key1, key2);
 				if (ecKey != null) {
 					return false;
@@ -12209,9 +12234,9 @@ ninja.publicKey = {
 			},
 			// old bugs
 			testBugWithLeadingZeroBytePublicKey: function () {
-				var key = "5Je7CkWTzgdo1RpwjYhwnVKxQXt8EPRq17WZFtWcq5umQdsDtTP";
+				var key = "6JxSVhyRZSvb43G6vwKvQ7KBsxMfjWi6cHdnaP9Wek7QDDvrsBT";
 				var btcKey = new Bitcoin.ECKey(key);
-				if (btcKey.getBitcoinAddress() != "1M6dsMZUjFxjdwsyVk8nJytWcfr9tfUa9E") {
+				if (btcKey.getBitcoinAddress() != "DREjQcW82fs2Ax4aEL8Lrk47VoaTHcNQxt") {
 					return false;
 				}
 				return true;
@@ -12219,7 +12244,7 @@ ninja.publicKey = {
 			testBugWithLeadingZeroBytePrivateKey: function () {
 				var key = "0004d30da67214fa65a41a6493576944c7ea86713b14db437446c7a8df8e13da";
 				var btcKey = new Bitcoin.ECKey(key);
-				if (btcKey.getBitcoinAddress() != "1NAjZjF81YGfiJ3rTKc7jf1nmZ26KN7Gkn") {
+				if (btcKey.getBitcoinAddress() != "DSJq6zBmJxAxFJETBubgHRBPegkPbtUN56") {
 					return false;
 				}
 				return true;
@@ -12378,6 +12403,49 @@ ninja.publicKey = {
 	if (ninja.getQueryString()["showseedpool"] == "true" || ninja.getQueryString()["showseedpool"] == "1") {
 		document.getElementById("seedpoolarea").style.display = "block";
 	}
+
+	(function initializeDonationCopy() {
+		var button = document.getElementById("donationAddressCopy");
+		var toast = document.getElementById("copytoast");
+		if (!button) {
+			return;
+		}
+		var originalLabel = button.getAttribute("title") || "Copy donation address";
+		var setCopiedState = function () {
+			button.className = button.className.replace(/\s?copied/g, "") + " copied";
+			button.setAttribute("title", "Copied");
+			if (toast) {
+				toast.className = toast.className.replace(/\s?show/g, "") + " show";
+			}
+			window.setTimeout(function () {
+				button.className = button.className.replace(/\s?copied/g, "");
+				button.setAttribute("title", originalLabel);
+				if (toast) {
+					toast.className = toast.className.replace(/\s?show/g, "");
+				}
+			}, 1400);
+		};
+		var fallbackCopy = function (text) {
+			var temp = document.createElement("textarea");
+			temp.value = text;
+			document.body.appendChild(temp);
+			temp.select();
+			try { document.execCommand("copy"); } catch (e) {}
+			document.body.removeChild(temp);
+			setCopiedState();
+		};
+		button.onclick = function () {
+			var text = button.getAttribute("data-copy-text");
+			if (navigator.clipboard && navigator.clipboard.writeText) {
+				navigator.clipboard.writeText(text).then(setCopiedState, function () {
+					fallbackCopy(text);
+				});
+			} else {
+				fallbackCopy(text);
+			}
+			return false;
+		};
+	})();
 </script>
 
 <script type="text/javascript">
@@ -12890,13 +12958,66 @@ ninja.publicKey = {
 	}
 
 	function guessPrinterSettings() {
-		// detect browser / OS human-readable
-		txt = "<p><small style=\"color: #666666;\"><b>User-agent:</b> " + navigator.userAgent + "</small><br />&nbsp;<br />";
-		var parser = new UAParser();
-		parser.setUA(navigator.userAgent);
-		var result = parser.getResult();
-		txt+=result.browser.name + " version " + result.browser.version + " (" + result.engine.name + ")<br />";
-		txt+=result.os.name + " version " + result.os.version + " (" + result.cpu.architecture + ")<br />";
+		// Keep printer hints without depending on the old bundled UAParser.js.
+		var ua = navigator.userAgent || "";
+		var result = {
+			browser: { name: "Unknown", version: "" },
+			engine: { name: "Unknown" },
+			os: { name: "Unknown", version: "" },
+			cpu: { architecture: "Unknown" }
+		};
+
+		if (/Edg\/([\d\.]+)/.test(ua)) {
+			result.browser.name = "Edge";
+			result.browser.version = RegExp.$1;
+			result.engine.name = "Blink";
+		} else if (/Chrome\/([\d\.]+)/.test(ua) && !/Edg\//.test(ua)) {
+			result.browser.name = "Chrome";
+			result.browser.version = RegExp.$1;
+			result.engine.name = "Blink";
+		} else if (/Firefox\/([\d\.]+)/.test(ua)) {
+			result.browser.name = /Iceweasel\/([\d\.]+)/.test(ua) ? "Iceweasel" : "Firefox";
+			result.browser.version = RegExp.$1;
+			result.engine.name = "Gecko";
+		} else if (/Version\/([\d\.]+).*Safari/.test(ua) && !/Chrome|Chromium|Edg\//.test(ua)) {
+			result.browser.name = "Safari";
+			result.browser.version = RegExp.$1;
+			result.engine.name = "WebKit";
+		} else if (/MSIE\s([\d\.]+)/.test(ua)) {
+			result.browser.name = "IE";
+			result.browser.version = RegExp.$1;
+			result.engine.name = "Trident";
+		} else if (/Trident\/.*rv:([\d\.]+)/.test(ua)) {
+			result.browser.name = "IE";
+			result.browser.version = RegExp.$1;
+			result.engine.name = "Trident";
+		}
+
+		if (/Windows NT/.test(ua)) {
+			result.os.name = "Windows";
+		} else if (/Mac OS X/.test(ua)) {
+			result.os.name = "Mac OS X";
+		} else if (/Ubuntu/.test(ua)) {
+			result.os.name = "Ubuntu";
+		} else if (/Debian/.test(ua)) {
+			result.os.name = "Debian";
+		} else if (/Linux/.test(ua)) {
+			result.os.name = "Linux";
+		}
+
+		if (/x86_64|Win64|x64|amd64/i.test(ua)) {
+			result.cpu.architecture = "amd64";
+		} else if (/arm64|aarch64/i.test(ua)) {
+			result.cpu.architecture = "arm64";
+		} else if (/arm/i.test(ua)) {
+			result.cpu.architecture = "arm";
+		} else if (/i[3-6]86|x86/i.test(ua)) {
+			result.cpu.architecture = "x86";
+		}
+
+		txt = "<p><small style=\"color: #666666;\"><b>User-agent:</b> " + ua + "</small><br />&nbsp;<br />";
+		txt+=result.browser.name + " version " + (result.browser.version || "unknown") + " (" + result.engine.name + ")<br />";
+		txt+=result.os.name + " version " + (result.os.version || "unknown") + " (" + result.cpu.architecture + ")<br />";
 		txt += "</p>";
 		document.getElementById("browserinfo").innerHTML=txt;
 		
